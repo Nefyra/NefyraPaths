@@ -1,0 +1,44 @@
+{
+  "range_configs": [
+    {
+      "distance_range": {
+        "min": 0.0,
+        "max": 50.0
+      },
+      "enabled": true,
+      "fov": 90.0,
+      "max_distance": 50.0,
+      "aim_at_teammates": false,
+      "health_weight": 0.4,
+      "distance_weight": 0.3,
+      "angle_weight": 0.3,
+      "kalman_enabled": false,
+      "kalman_prediction_time": 0.05,
+      "created_time": "2024-01-01T12:00:00Z",
+      "priority": 10
+    },
+    {
+      "distance_range": {
+        "min": 50.0,
+        "max": 150.0
+      },
+      "enabled": true,
+      "fov": 60.0,
+      "max_distance": 150.0,
+      "aim_at_teammates": false,
+      "health_weight": 0.3,
+      "distance_weight": 0.4,
+      "angle_weight": 0.3,
+      "kalman_enabled": true,
+      "kalman_process_noise_pos": 0.08,
+      "kalman_process_noise_vel": 0.08,
+      "kalman_process_noise_acc": 0.08,
+      "kalman_measurement_noise": 0.08,
+      "kalman_prediction_time": 0.08,
+      "kalman_history_size": 60,
+      "created_time": "2024-01-01T12:30:00Z",
+      "priority": 5
+    }
+  ],
+  "last_modified": "2024-01-01T13:00:00Z"
+}
